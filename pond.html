@@ -33,7 +33,7 @@
 <script>
     async function fetchDucks() {
         try {
-            let response = await fetch("https://ducks-service-dbhander.onrender.com/ducks");
+            let response = await fetch("https://practicum4-backend.onrender.com");
             if (!response.ok) throw new Error("Failed to fetch ducks");
             let ducks = await response.json();
 
@@ -45,7 +45,7 @@
                 card.className = "card";
 
                 let img = document.createElement("img");
-                img.src = `https://ducks-service-dbhander.onrender.com/ducks/${duck.id}/image`;
+                img.src = `https://practicum4-backend.onrender.com/ducks/${duck.id}/image`;
                 img.alt = "Duck Image";
 
                 let cardContainer = document.createElement("div");
